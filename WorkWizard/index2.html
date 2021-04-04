@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <title>Working Wizard</title>
+</head>
+<script>
+    $(function(){
+        function pager() {
+            var box = $(".box3content").find(".box3");
+            var len = $("#nowNum").html();
+            var num = $("#totalNum").html();
+            var i = 1;
+            
+            $("#next_btn_icon").click(function () {
+                i++;
+                if(i==num){
+                    $("#nowNum").html(num); 
+                }
+                $(".box3content").find(".box3").eq(i-1).show().siblings().hide();
+            
+            });
+            $("#prev_btn_icon").click(function () {
+                i--;
+                console.log(i)
+                if(i=len){  
+                    $("#nowNum").html(len);   
+                }
+                $(".box3content").find(".box3").eq(len-1).show().siblings().hide();
+            
+            })
+        }
+        pager();
+    })
+</script>
+<body>
+    <div class="header">
+        <img src="images/logo.jpg" alt="">
+        <p>
+            Contact Us
+            <img src="images/img11.jpg" alt="">
+        </p>
+    </div>
+
+    <div class="box2">
+        <img src="images/img8.jpg" alt="">
+        <div>
+            <h3>Other Interesting articles </h3>
+            <ul>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <span>100 Classic World Dishes!</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <span>Have a pet? Here's how to stay productive and keep them company</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <span>How to stay focused when working at home</span>
+                    </p>
+                </li>
+            </ul>
+            <a href="blank.html" target="_blank">readmore...</a>
+        </div>
+
+    </div>
+
+    <div class="bigbox3">
+        <div class="box3content">
+            <div class="box3">
+                <h3>10 ways to improve your Home Office
+                    <em>By Jill Duffy</em>
+                    <em>published 2020-12-21 09:02</em>
+                </h3>
+                <p>Last altered  2021-12-20 22:39
+                    <img src="images/img9.jpg" alt="">
+                </p>
+                <div class="textBox">
+                    With so many of us working remotely because of the pandemic, it's more important than ever to have a functional and appealing workspace. These simple tips and tricks can help you make the most of your home office without spending much money.
+                    <br>
+                    <br> Are you newly working from home during the COVID-19 pandemic? Not knowing how long your remote work situation will last might leave you wondering how much effort you should put into creating a nice home office. Is it worth it to order fancy equipment or paint the walls? How much work do you need to put in to get a nice work-from-home space?
+                    <br>
+                    <br>There are all sort of cool, quirk, and useful things you can buy for your home office. Before you sink too much time, effort, and money into this project, however, consider making a few simple tweaks to your existing setup to make it better. You can implement many of these suggestions immediately, often for little to no money. If they can help get you through the next few weeks (or months), you can reevaluate how much more you want to customize your home work space later on.
+                    <br>
+                </div>
+            </div>
+            <div class="box3" style="display:none;">
+                <h3>10 ways to improve your Home Office
+                    <em>By Jill Duffy</em>
+                    <em>published 2020-12-21 09:02</em>
+                </h3>
+                <p>Last altered  2021-12-20 22:39
+                    <img src="images/img9.jpg" alt="">
+                </p>
+                <div class="textBox">
+                        You don't need an expensive office chair at home, as it's easy to adapt any standard chair to be more comfortable with a simple back pillow. You can buy an inexpensive curved foam cushion for your chair, or save yourself a few bucks by trying a standard pillow or rolled up towel first.
+                    <br>
+                    <br>Having adequate lumbar support is just one piece of the ergonomic puzzle. Be sure to look at all the other things you need to do to properly set up an ergonomic home office.
+                    <br>
+                </div>
+            </div>
+       
+        </div>
+        <div class="searchBox">
+            <div>
+                <img src="images/searchbox.jpg" alt="">
+                <input type="text" placeholder="Input your keywords">
+                <a href=""></a>
+            </div>
+            <h4>Tags Type</h4>
+            <ul>
+                <li>
+                    Productivity
+                </li>
+                <li>
+                    Physical Health
+                </li>
+                <li>
+                    Mental Health
+                </li>
+                <li>
+                    Social
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="pagertabs">
+        <span>Join Us</span>
+        <div class="pageritem">
+            <img src="images/left.jpg" alt="" id="prev_btn_icon">
+            <span>
+                <i id="nowNum">1</i>/
+                <i id="totalNum">2</i>
+            </span>
+            <img src="images/left.jpg" alt="" id="next_btn_icon">
+        </div>
+    </div>
+    <div class="lineBox">
+        <em>Common types</em>
+    </div>
+
+    <div class="line">
+
+    </div>
+
+    <div class="bottomBox">
+        <span class="share">
+            <img src="images/img10.jpg" alt=""> Share the moment
+        </span>
+        <h3>Come and Join us</h3>
+        <div>
+            Leave a comment
+            <input type="text" style="height:80px">
+        </div>
+        <div>
+            User Name
+            <input type="text">
+        </div>
+        <div>
+            Email
+            <input type="text">
+        </div>
+        <a href="">Submit all</a>
+    </div>
+    <div class="footer">
+        <h2>
+             Copyright 2021 Hackiethon.
+        </h2>
+        <div class="cur1">
+            <h3>Stay Health during Covid-19</h3>
+            <ul>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <em>Five Steps to Improved Physical Health</em>
+                        <span>Do your part to stay healthy and encourage others in your community to do the same by putting these five tips into practice.
+                        </span>
+                    </p>
+                </li>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <em>7 Trustworthy Tips on How to Stay Physically and Mentally Healthy Right Now</em>
+                        <span>Humanity is going through a unique period in its history. Stress, worries, anxiety, and fear of the unknown are upsetting us all.
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cur2">
+            <h3>Tags</h3>
+            <ul>
+                <li>
+                    <a href="">Productivity</a>
+                </li>
+                <li>
+                    <a href="">Physical Health</a>
+                </li>
+                <li>
+                    <a href="">Social</a>
+                </li>
+                <li>
+                    <a href="">Diet</a>
+                </li>
+                <li>
+                    <a href="">Let's Support Each other</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <title>Working Wizard</title>
+</head>
+<script>
+    $(function () {
+        $(".pageTab").find("span").click(function () {
+            var n=$(this).index();
+            $(this).addClass("cur").siblings().removeClass("cur");
+            $(".listBox").children().eq(n).show().siblings().hide()
+        })
+    })
+</script>
+
+<body>
+    <div class="header">
+        <img src="images/logo.jpg" alt="">
+        <a href="blank.html" target="_blank">
+            <img src="images/dot.jpg" alt="">
+            <span>Menu</span>
+        </a>
+    </div>
+    <div class="banner">
+        <img src="images/banner.PNG" alt="">
+    </div>
+    <div class="tabs w1200">
+        <a href="">Productivity</a>
+        <a href="">Physical Health</a>
+        <a href="">Mental Health</a>
+        <a href="">Social</a>
+    </div>
+
+    <div class="listBox w1200">
+        <ul>
+            <li>
+                <a href="blank.html" target="_blank">
+                    <img src="images/img1.jpg" alt="">
+                    <em>Click to read more...</em>
+                    <h3>Ten tips to stay mental Health</h3>
+                    <p>An important part of keeping fit and healthy is to take care of your own mental health. There are plenty of things you can do to help make sure you keep yourself mentally healthy.
+                    </p>
+                    <hr>
+                    <span>
+                        <i>last edit time is : 2021-01-02 19:26</i>                        
+                        <img src="images/img3.jpg" alt="">
+                    </span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img4.jpg" alt="">
+                    <em>Click to read more</em>
+                    <h3>10 things you can do for Your Mental Health</h3>
+                    <p>Try these tips to keep your balance, or re-balance yourself.</p>
+                    <span>
+                        <img src="images/img2.jpg" alt="">
+                        <i>Author: Catherine</i>
+                        <img src="images/img3.jpg" alt=""><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                    <img src="images/img5.jpg" alt="">
+                    <em>Click to read more...</em>
+                    <h3>Tips for staying Mental Health</h3>
+                    <p>Stay mentally healthy by following these simple steps</p>
+                    <span>
+                        <img src="images/img2.jpg" alt="">
+                        <i>Author: Helen</i>
+                        <img src="images/img3.jpg" alt="">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img6.jpg" alt="">
+                    <em>Author: Alex</em>
+                    <h3>14 Simple Ways to Stick to a Healthy Diet</h3>
+                    <p>Eating healthy can help you lose weight and have more energy.It can also improve your mood and reduce your risk of disease                    </p>
+                    <span>
+                        <img src="images/img2.jpg" alt="">
+                        <i>Author: Changjie</i>
+                        <img src="images/img3.jpg" alt="">
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul style="display:none;">
+            <li>
+                <a href="blank.html" target="_blank">
+                    <img src="images/img1.jpg" alt="">
+                    <em>Author: Joe</em>
+                    <h3>14 Tips for Getting (and Staying) Motivated to Eat Healthy</h3>
+                    <p>Tips and tricks from a health coach for how to get and stay motivated to eat healthy!                     </p>
+                    <span>
+                        <img src="images/img2.jpg" alt="">
+                        <i>Last Edited: 2021-03-29</i>
+                        <img src="images/img3.jpg" alt="">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/img4.jpg" alt="">
+                    <em>June 1 2020</em>
+                    <h3>How to work from home effectively</h3>
+                    <p>Whether you’re an employer or an employee, here are some tips for how to work from home more effectively.
+                    </p>
+                    <span>
+                        <img src="images/img2.jpg" alt="">
+                        <i>Author: Jake</i>
+                        <img src="images/img3.jpg" alt="">
+                    </span>
+                </a>
+            </li>
+            <li>
+                    <a href="blank.html" target="_blank">
+                        <img src="images/img1.jpg" alt="">
+                        <em>Author: Tom</em>
+                        <h3>Get dressed for success</h3>
+                        <p>Have you been working remotely? Or has it sometimes felt more like you’re remotely working                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last edited: 2021-03-28</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img4.jpg" alt="">
+                        <em>Author: Dannie</em>
+                        <h3>Keep work behind an office door</h3>
+                        <p>Even if yours is a ‘kitchen table firm’, try to create a dedicated office space, with a door that you open after your commute and close behind you at the end of the day
+                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last edited: 2021-04-01</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                
+                    
+
+        </ul>
+        <ul style="display:none;">
+                <li>
+                    <a href="blank.html" target="_blank">
+                        <img src="images/img1.jpg" alt="">
+                        <em>Author:Jane</em>
+                        <h3>Collaborate and communicate</h3>
+                        <p>Whether you’re a small business owner or an employee located away from the mothership of a main office, remote work can make you feel removed you from your clients and colleagues                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last Edited:2020-09-08</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img4.jpg" alt="">
+                        <em>Author:Jenny</em>
+                        <h3>Defeat distraction and stay focused</h3>
+                        <p>Making effective use of your time is a major part of knowing how to work from home
+                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last edited: 2021-02-08</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img5.jpg" alt="">
+                        <em>Author:Susan</em>
+                        <h3>Social media</h3>
+                        <p>How to work from home effectively when social media is just a click away?
+                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last Edited: 2021-01-31</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img6.jpg" alt="">
+                        <em>Author: Sisi</em>
+                        <h3>Stay accountable and stick to your goals</h3>
+                        <p>Let’s be honest – peer pressure and management oversight both play a role in driving our motivation at work.                        </p>
+                        <span>
+                            <img src="images/img2.jpg" alt="">
+                            <i>Last Edited:2020-12-31</i>
+                            <img src="images/img3.jpg" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                        <a href="">
+                            <img src="images/img5.jpg" alt="">
+                            <em>Author: Irene</em>
+                            <h3>Create a Morning Routine</h3>
+                            <p>Deciding you'll sit down at your desk and start work at a certain time is one thing. Creating a routine that guides you into the chair is another                            </p>
+                            <span>
+                                <img src="images/img2.jpg" alt="">
+                                <i>Last Edited: 2020-11-28</i>
+                                <img src="images/img3.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/img6.jpg" alt="">
+                            <em>Author:Cathy</em>
+                            <h3>Schedule Breaks</h3>
+                            <p>
+Know your company's policy on break times and take them. If you're self-employed, give yourself adequate time during the day to walk away from the computer screen and phone.                            </p>
+                            <span>
+                                <img src="images/img2.jpg" alt="">
+                                <i>Last Edited: 2021-02-15</i>
+                                <img src="images/img3.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+    </div>
+
+    <div class="pagerBox w1200">
+        <span>
+            <a href="blank.html" target="_blank"> readmore...</a>
+        </span>
+        <div class="pageTab">
+            <span class="cur">1</span>
+            <span>2</span>
+            <span>next</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>
+            2021 Hackthon Team LastMinute Copyright All Rights Reserved.
+        </h2>
+        <div class="cur1">
+            <h3>Stay Health during Covid-19</h3>
+            <ul>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <em>Five Steps to Improved Physical Health</em>
+                        <span>Do your part to stay healthy and encourage others in your community to do the same by putting these five tips into practice.</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="images/img7.jpg" alt="">
+                    <p>
+                        <em>7 Trustworthy Tips on How to Stay Physically and Mentally Healthy Right Now</em>
+                        <span>Humanity is going through a unique period in its history. Stress, worries, anxiety, and fear of the unknown are upsetting us all.</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cur2">
+            <h3>Tags</h3>
+            <ul>
+                <li>
+                    <a href="">Productivity</a>
+                </li>
+                <li>
+                    <a href="">Physical Health</a>
+                </li>
+                <li>
+                    <a href="">Social</a>
+                </li>
+                <li>
+                    <a href="">Diet</a>
+                </li>
+                <li>
+                    <a href="">Let's Support Each other</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
